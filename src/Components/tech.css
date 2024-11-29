@@ -1,0 +1,21 @@
+.logos{
+    overflow: hidden;
+    width: 100%;
+}
+.logos-slider{
+    display: flex;
+    gap: 40px;
+    animation: slide 10s linear infinite;
+}
+.logos-slider img{
+    height: 50px;
+
+}
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+transform: translateX(-100%);
+    }
+}
