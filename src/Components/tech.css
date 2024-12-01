@@ -1,21 +1,30 @@
-.logos{
-    overflow: hidden;
+.logos {
+    overflow: hidden; 
+    position: relative;
     width: 100%;
-}
-.logos-slider{
-    display: flex;
-    gap: 40px;
-    animation: slide 10s linear infinite;
-}
-.logos-slider img{
-    height: 50px;
+    background-color: #000;
+  }
+  
 
-}
-@keyframes slide{
-    from{
-        transform: translateX(0);
+  .logos-slider {
+    display: flex;
+    animation: scroll-infinite 12s linear infinite; 
+    width: fit-content; 
+  }
+  
+
+  .logos-slider img {
+    height: 60px; 
+    width: auto; 
+    margin-right: 30px; 
+  }
+  
+ 
+  @keyframes scroll-infinite {
+    0% {
+      transform: translateX(0); 
     }
-    to{
-transform: translateX(-100%);
+    100% {
+      transform: translateX(-100%); 
     }
-}
+  }
